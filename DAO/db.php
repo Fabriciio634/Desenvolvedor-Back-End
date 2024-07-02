@@ -2,9 +2,10 @@
 namespace App\DAO;
 
 class connDB {
-    private $server = "mysql:host=localhost;dbname=testingdb";
-    private $username = "root";
-    private $password = "";
+    private $server = "mysql:host=ctgplw90pifdso61.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306
+;dbname=n7isy27hinhr1pq9";
+    private $username = "vitgobeli75tqeje";
+    private $password = "c490grxjwj30nvtl";
     private $options = array(\PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION, \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC);
     protected $connDB;
 
