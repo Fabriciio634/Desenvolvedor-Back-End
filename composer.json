@@ -1,0 +1,10 @@
+{
+  "name": "Fabriciio634/Desenvolvedor-Back-End",
+  "description": "Aplicação web de cadastro de clientes em PHP",
+  "type": "project",
+  "require": {
+      "php": ">=7.4",
+      "ext-pdo": "*",
+      "ext-mbstring": "*"
+    }
+}
