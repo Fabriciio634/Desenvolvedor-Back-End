@@ -13,7 +13,7 @@
         $lastname = $_POST['lastname'];
         $address = $_POST['address'];
  
-        $sql = "UPDATE cliente SET firstname = '$firstname', lastname = '$lastname', address = '$address' WHERE id = '$id'";
+        $sql = "UPDATE client SET firstname = '$firstname', lastname = '$lastname', address = '$address' WHERE id = '$id'";
         if($db->exec($sql)){
             $output['message'] = 'Cliente atualizado com sucesso!';
         } 

@@ -7,7 +7,7 @@
     $database = new connDB();
     $db = $database->open();
     try{
-        $sql = "DELETE FROM cliente WHERE id = '".$_POST['id']."'";
+        $sql = "DELETE FROM client WHERE id = '".$_POST['id']."'";
         if($db->exec($sql)){
             $output['message'] = 'Cliente excluido com sucesso!';
         }

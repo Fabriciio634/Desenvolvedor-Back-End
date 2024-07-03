@@ -9,7 +9,7 @@ $(document).ready(function () {
     var addform = $(this).serialize();
     $.ajax({
       method: 'POST',
-      url: 'App/Controller/Adicionar.php',
+      url: '../App/Controller/Adicionar.php',
       data: addform,
       dataType: 'json',
       success: function (response) {
@@ -38,7 +38,7 @@ $(document).ready(function () {
     var editform = $(this).serialize();
     $.ajax({
       method: 'POST',
-      url: 'App/Controller/Editar.php',
+      url: '../App/Controller/Editar.php',
       data: editform,
       dataType: 'json',
       success: function (response) {
@@ -68,7 +68,7 @@ $(document).ready(function () {
     var id = $(this).val();
     $.ajax({
       method: 'POST',
-      url: 'App/Controller/Excluir.php',
+      url: '../App/Controller/Excluir.php',
       data: { id: id },
       dataType: 'json',
       success: function (response) {
@@ -96,7 +96,7 @@ $(document).ready(function () {
 function fetch() {
   $.ajax({
     method: 'POST',
-    url: 'App/Controller/Listar.php',
+    url: '../App/Controller/Listar.php',
     success: function (response) {
       $('#tbody').html(response);
     },
@@ -106,7 +106,7 @@ function fetch() {
 function getDetails(id) {
   $.ajax({
     method: 'POST',
-    url: 'App/Controller/Busca.php',
+    url: '../App/Controller/Busca.php',
     data: { id: id },
     dataType: 'json',
     success: function (response) {

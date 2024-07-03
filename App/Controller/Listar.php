@@ -8,7 +8,7 @@
 
     if ($db) {
         try {
-            $sql = 'SELECT * FROM cliente';
+            $sql = 'SELECT * FROM client';
             foreach ($db->query($sql) as $row) {
                 ?>
                 <tr>

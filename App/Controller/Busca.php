@@ -10,7 +10,7 @@
  
     try{
         $id = $_POST['id'];
-        $stmt = $db->prepare("SELECT * FROM cliente WHERE id = :id");
+        $stmt = $db->prepare("SELECT * FROM client WHERE id = :id");
         $stmt->bindParam(':id', $id);
         $stmt->execute();
         $output['data'] = $stmt->fetch();

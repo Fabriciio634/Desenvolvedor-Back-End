@@ -7,7 +7,7 @@
     $database = new connDB();
     $db = $database->open();
     try{
-        $stmt = $db->prepare("INSERT INTO cliente (firstname, lastname, address) VALUES (:firstname, :lastname, :address)");
+        $stmt = $db->prepare("INSERT INTO client (firstname, lastname, address) VALUES (:firstname, :lastname, :address)");
 
         if ($stmt->execute(array(':firstname' => $_POST['firstname'] , ':lastname' => $_POST['lastname'] , ':address' => $_POST['address'])) ){
             $output['message'] = 'Cliente adicionado com sucesso.';
