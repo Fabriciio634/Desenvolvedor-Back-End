@@ -2,7 +2,7 @@
 $container->set(PDO::class, function() {
   $dburl = parse_url(getenv('DATABASE_URL') ?: throw new Exception('no DATABASE_URL'));
   return new PDO(sprintf(
-    "pgsql:host=%s;port=%s;dbname=%s;user=%s;password=%s",
+    "mysql:host=%s;port=%s;dbname=%s;user=%s;password=%s",
     $dburl['host'],
     $dburl['port'],
     ltrim($dburl['path'], '/'), // URL path is the DB name, must remove leading slash
