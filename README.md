@@ -1,6 +1,6 @@
 # Desenvolvedor-Back-End
 
-Cria um banco e renomea-lo para "testingdb"
+Cria um banco com o nome "testingdb"
 
 Rodar o seguinte comando para criar a tabela:
 
@@ -26,3 +26,10 @@ Popular a tabela com os seguintes dados:
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;```
 
   Utilizar Xampp para rodar o projeto no localhost:8000
+
+Instalar composer na sua maquina
+https://getcomposer.org/download/
+
+Rodar o comando "composer install"
+
+criar uma arquivo  .env baseado no arquivo .env.example com os valores dobanco de dados local

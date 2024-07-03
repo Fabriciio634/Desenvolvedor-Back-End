@@ -1,6 +1,7 @@
 <?php
-    include_once('App/DAO/db.php');
- 
+    include_once(__DIR__ . '/../DAO/db.php');    
+    use App\DAO\connDB;
+    
     $output = array('error' => false);
  
     $database = new connDB();
